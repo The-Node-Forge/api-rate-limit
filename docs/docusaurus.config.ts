@@ -3,17 +3,17 @@ import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'API Rate Limiter',
+  title: 'API Rate Limit',
   tagline:
     'A simple and efficient API rate limiter for JavaScript/TypeScript applications',
   favicon: 'img/favicon.ico',
 
   url: 'https://the-node-forge.github.io',
-  baseUrl: '/api-rate-limiter/',
+  baseUrl: '/api-rate-limit/',
   trailingSlash: false,
 
   organizationName: 'The-Node-Forge',
-  projectName: 'api-rate-limiter',
+  projectName: 'api-rate-limit',
   deploymentBranch: 'gh-pages',
 
   onBrokenLinks: 'throw',
@@ -31,7 +31,7 @@ const config: Config = {
         docs: {
           sidebarPath: require.resolve('./sidebars.ts'),
           editUrl:
-            'https://github.com/The-Node-Forge/api-rate-limiter/tree/main/docs/',
+            'https://github.com/The-Node-Forge/api-rate-limit/tree/main/docs/',
         },
         blog: {
           showReadingTime: true,
@@ -40,7 +40,7 @@ const config: Config = {
             xslt: true,
           },
           editUrl:
-            'https://github.com/The-Node-Forge/api-rate-limiter/tree/main/docs/',
+            'https://github.com/The-Node-Forge/api-rate-limit/tree/main/docs/',
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
           onUntruncatedBlogPosts: 'warn',
@@ -75,7 +75,7 @@ const config: Config = {
           label: 'API',
         },
         {
-          href: 'https://github.com/The-Node-Forge/api-rate-limiter',
+          href: 'https://github.com/The-Node-Forge/api-rate-limit',
           label: 'GitHub',
           position: 'right',
         },
@@ -98,7 +98,7 @@ const config: Config = {
           items: [
             {
               label: 'GitHub',
-              href: 'https://github.com/The-Node-Forge/api-rate-limiter',
+              href: 'https://github.com/The-Node-Forge/api-rate-limit',
             },
           ],
         },
