@@ -42,7 +42,7 @@ if (limiter.isAllowed(userId)) {
 
 ---
 
-## 🌐 Express Middleware Example
+## 🌐 Express Middleware Example - Global
 Easily integrate with an **Express API**.
 
 ```typescript
@@ -59,6 +59,37 @@ app.use(rateLimitMiddleware(limiter));
 
 app.get("/", (req, res) => {
   res.send("Welcome to my API!");
+});
+
+app.listen(3000, () => console.log("Server running on port 3000"));
+```
+
+---
+
+## 🌐 Express Middleware Example - Specific
+Easily integrate with an **Express API**.
+
+```typescript
+import express from "express";
+import { RateLimiter, rateLimitMiddleware } from "@node-forge/rate-limiter";
+
+const app = express();
+
+const limiterFiveReq = new RateLimiter({ windowMs: 60000, maxRequests: 5 });
+const limiterTenReq = new RateLimiter({ windowMs: 60000, maxRequests: 10 });
+
+// Apply rate limiting to only specific routes
+app.get("/public", (req, res) => {
+  res.send("This route has no rate limiting!");
+});
+
+// Apply rate limiting only to this route
+app.get("/limited", rateLimitMiddleware(limiterFiveReq), (req, res) => {
+  res.send("This route is rate-limited to 5 requests!");
+});
+
+app.post("/submit", rateLimitMiddleware(limiterTenReq), (req, res) => {
+  res.send("This POST request is also rate-limited to ten requests!");
 });
 
 app.listen(3000, () => console.log("Server running on port 3000"));
