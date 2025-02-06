@@ -4,7 +4,8 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'API Rate Limiter',
-  tagline: 'A simple and efficient API rate limiter for JavaScript/TypeScript applications',
+  tagline:
+    'A simple and efficient API rate limiter for JavaScript/TypeScript applications',
   favicon: 'img/favicon.ico',
 
   url: 'https://the-node-forge.github.io',
@@ -29,7 +30,8 @@ const config: Config = {
       {
         docs: {
           sidebarPath: require.resolve('./sidebars.ts'),
-          editUrl: 'https://github.com/The-Node-Forge/api-rate-limiter/tree/main/docs/',
+          editUrl:
+            'https://github.com/The-Node-Forge/api-rate-limiter/tree/main/docs/',
         },
         blog: {
           showReadingTime: true,
@@ -37,7 +39,8 @@ const config: Config = {
             type: ['rss', 'atom'],
             xslt: true,
           },
-          editUrl: 'https://github.com/The-Node-Forge/api-rate-limiter/tree/main/docs/',
+          editUrl:
+            'https://github.com/The-Node-Forge/api-rate-limiter/tree/main/docs/',
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
           onUntruncatedBlogPosts: 'warn',
