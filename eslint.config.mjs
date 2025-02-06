@@ -58,7 +58,7 @@ export default [
     },
 
     rules: {
-      'space-before-function-paren': ['error', 'always'], // Space before function parentheses
+      'space-before-function-paren': ['off'], // Space before function parentheses
       'func-call-spacing': ['error', 'never'], // Prevents spaces inside function calls
       'comma-spacing': ['error', { before: false, after: true }], // Space after commas in function args
       'object-curly-spacing': ['error', 'always'], // Ensures spaces inside curly braces

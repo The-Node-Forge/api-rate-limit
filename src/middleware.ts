@@ -1,5 +1,14 @@
-import { Request, Response, NextFunction } from "express";
-import RateLimiter from "./RateLimiter";
+import { Request, Response, NextFunction } from 'express';
+
+import RateLimiter from './RateLimiter';
+
+/**
+ * HTTP status codes for common API responses.
+ * @enum {number}
+ */
+const HTTP_STATUS = {
+  TOO_MANY_REQUESTS: 429,
+};
 
 /**
  * Express middleware for rate limiting API requests.
@@ -23,7 +32,9 @@ export const rateLimitMiddleware = (limiter: RateLimiter) => {
     const userId: string = req.ip || '';
 
     if (!limiter.isAllowed(userId)) {
-      return res.status(429).json({ message: "Too many requests, please try again later." });
+      return res
+        .status(HTTP_STATUS.TOO_MANY_REQUESTS)
+        .json({ message: 'Too many requests, please try again later.' });
     }
 
     next();

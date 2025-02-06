@@ -52,7 +52,9 @@ class RateLimiter {
     const now = Date.now();
     const timestamps = this.requests.get(userId) || [];
 
-    const filteredTimestamps = timestamps.filter((timestamp) => now - timestamp < this.windowMs);
+    const filteredTimestamps = timestamps.filter(
+      (timestamp) => now - timestamp < this.windowMs,
+    );
 
     if (filteredTimestamps.length >= this.maxRequests) {
       return false;
