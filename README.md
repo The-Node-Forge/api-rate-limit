@@ -1,5 +1,11 @@
-# 🚀 Lightweight API Rate Limiter
 
+<div align="center">
+   
+  # API Rate Limiter 
+ [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+ </div>
+ 
 A **simple and efficient API rate limiter** for JavaScript/TypeScript applications. This package helps developers **limit API requests per user**, preventing abuse and excessive usage.
 
 ## ✨ Features
@@ -24,8 +30,10 @@ yarn add @node-forge/rate-limiter
 
 ## 🛠️ Basic Usage
 
-### **1️⃣ Import & Use in JavaScript/TypeScript**
-```typescript
+### **1️⃣ 🌐 JavaScript/TypeScript Example**
+Easily integrate with **JavaScript/TypeScript**.
+```javascript
+// Javascript
 import RateLimiter from "@node-forge/rate-limiter";
 
 // Create a rate limiter allowing 5 requests per minute
@@ -42,7 +50,7 @@ if (limiter.isAllowed(userId)) {
 
 ---
 
-## 🌐 Express Middleware Example - Global
+### 2️⃣ 🌐 Express Middleware Example - Global
 Easily integrate with an **Express API**.
 
 ```typescript
@@ -66,7 +74,7 @@ app.listen(3000, () => console.log("Server running on port 3000"));
 
 ---
 
-## 🌐 Express Middleware Example - Specific
+### 3️⃣ 🌐 Express Middleware Example - Specific
 Easily integrate with an **Express API**.
 
 ```typescript
