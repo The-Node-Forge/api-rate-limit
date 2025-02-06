@@ -1,5 +1,9 @@
-# my-npm-package v1.0.0
+# api-rate-limit v1.0.0
+
+## Classes
+
+- [RateLimiter](classes/RateLimiter.md)
 
 ## Functions
 
-- [greet](functions/greet.md)
+- [rateLimitMiddleware](functions/rateLimitMiddleware.md)

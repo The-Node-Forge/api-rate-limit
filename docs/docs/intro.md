@@ -6,7 +6,7 @@ sidebar_position: 1
 
 # Documentation Index
 
-Welcome to the documentation for **NPM-Template**. Below is a list of available
+Welcome to the documentation for **API Rate Limiter**. Below is a list of available
 guides:
 
 ## Description

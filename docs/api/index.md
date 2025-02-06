@@ -1,72 +1,145 @@
-# npm-template
+<div align="center">
+   
+  # API Rate Limiter 
+ [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-**A starter npm package**
+</div>
+ 
+A **simple and efficient API rate limiter** for JavaScript/TypeScript applications. This package helps developers **limit API requests per user**, preventing abuse and excessive usage.
 
-This repository serves as a template for creating npm packages using TypeScript, Jest
-for testing, and a preconfigured development environment. It's designed to help you
-quickly set up a project with best practices.
-
----
-
-## Features
-
-- **TypeScript**: Write modern JavaScript with strong typing.
-- **Jest**: Preconfigured testing framework for unit tests.
-- **ESLint**: Linter to ensure consistent code quality.
-- **Prettier**: Automated code formatting.
-- **GitHub Actions (optional)**: Automate your testing and build pipeline.
-- **Build Script**: Automatically compiles TypeScript into JavaScript.
-- **npm Publishing**: Ready for publishing with a `prepublishOnly` hook.
+## ✨ Features
+- ✅ **Configurable Limits** – Set max requests per second, minute, or hour.
+- ✅ **In-Memory Storage** – Fast and lightweight.
+- ✅ **Express Middleware** – Easily integrate with Express.
+- ✅ **Multiple Users** – Tracks each user separately.
 
 ---
 
-## Getting Started
-
-### 1. Create a New Repository
-
-Use this template to create a new repository:
-
-1. Click the **"Use this template"** button on the repository page.
-2. Follow the prompts to name your new repository.
-
-### 2. Clone Your Repository
-
-```bash
-git clone https://github.com/The-Node-Forge/<your-repo-name>
-cd <your-repo-name>
+## 📦 Installation
+```sh
+npm install @node-forge/rate-limiter
 ```
 
-### 3. Install Dependencies
-
-```bash
-npm install
+or using Yarn:
+```sh
+yarn add @node-forge/rate-limiter
 ```
 
-### 4. Start Building
+---
 
-Write your code in the src/ folder, and export your packages public API in
-src/index.ts
+## 🛠️ Basic Usage
 
-### 5. scripts
+### **1️⃣ 🌐 JavaScript/TypeScript Example**
+Easily integrate with **JavaScript/TypeScript**.
+```javascript
+// Javascript
+import RateLimiter from "@node-forge/rate-limiter";
 
-## Contributing
+// Create a rate limiter allowing 5 requests per minute
+const limiter = new RateLimiter({ windowMs: 60000, maxRequests: 5 });
 
-Contributions are welcome! If you'd like to propose changes or improvements, feel
-free to open an issue or a pull request.
+const userId = "user123"; // Could be an API key or IP
 
-### Steps to Contribute
+if (limiter.isAllowed(userId)) {
+  console.log("Request allowed ✅");
+} else {
+  console.log("Too many requests ❌");
+}
+```
 
-1. **Fork the repository**.
-2. **Create a feature branch**:
-   ```bash
-   git checkout -b feature/my-new-feature
-   ```
-3. **Commit your changes**:
-   ```bash
-   git commit -m 'Add my feature'
-   ```
-4. **Push to the branch**:
-   ```bash
-   git push origin feature/my-new-feature
-   ```
-5. **Open a pull request**
+---
+
+### 2️⃣ 🌐 Express Middleware Example - Global
+Easily integrate with an **Express API**.
+
+```typescript
+import express from "express";
+import { RateLimiter, rateLimitMiddleware } from "@node-forge/rate-limiter";
+
+const app = express();
+
+// Set up rate limiter (10 requests per minute)
+const limiter = new RateLimiter({ windowMs: 60000, maxRequests: 10 });
+
+// Apply middleware globally
+app.use(rateLimitMiddleware(limiter));
+
+app.get("/", (req, res) => {
+  res.send("Welcome to my API!");
+});
+
+app.listen(3000, () => console.log("Server running on port 3000"));
+```
+
+---
+
+### 3️⃣ 🌐 Express Middleware Example - Specific
+Easily integrate with an **Express API**.
+
+```typescript
+import express from "express";
+import { RateLimiter, rateLimitMiddleware } from "@node-forge/rate-limiter";
+
+const app = express();
+
+const limiterFiveReq = new RateLimiter({ windowMs: 60000, maxRequests: 5 });
+const limiterTenReq = new RateLimiter({ windowMs: 60000, maxRequests: 10 });
+
+// Apply rate limiting to only specific routes
+app.get("/public", (req, res) => {
+  res.send("This route has no rate limiting!");
+});
+
+// Apply rate limiting only to this route
+app.get("/limited", rateLimitMiddleware(limiterFiveReq), (req, res) => {
+  res.send("This route is rate-limited to 5 requests!");
+});
+
+app.post("/submit", rateLimitMiddleware(limiterTenReq), (req, res) => {
+  res.send("This POST request is also rate-limited to ten requests!");
+});
+
+app.listen(3000, () => console.log("Server running on port 3000"));
+```
+
+---
+
+## ✅ **API Reference**
+### **RateLimiter Class**
+```typescript
+new RateLimiter({ windowMs: number, maxRequests: number })
+```
+| Parameter   | Type   | Description                                      |
+|------------|--------|--------------------------------------------------|
+| `windowMs` | `number` | Time window in milliseconds (e.g., `60000` for 1 minute) |
+| `maxRequests` | `number` | Maximum allowed requests in the given window |
+
+#### **Methods**
+```typescript
+isAllowed(userId: string): boolean
+```
+| Method      | Returns   | Description                                      |
+|------------|----------|--------------------------------------------------|
+| `isAllowed(userId)` | `boolean` | Returns `true` if the user is allowed to make a request, otherwise `false`. |
+
+---
+
+## 📜 **License**
+MIT License.
+
+---
+
+## 💡 **Contributing**
+Contributions are welcome! Please submit issues or pull requests.
+
+---
+
+## 🌟 **Support**
+If you find this package useful, please consider giving it a ⭐ on GitHub!
+
+---
+
+## 🔗 **Links**
+- 📦 [NPM Package](https://www.npmjs.com/package/@node-forge/rate-limiter) *(Replace with actual link)*
+- 🏗 [GitHub Repo](https://github.com/The-Node-Forge/rate-limiter) *(Replace with actual link)*
+

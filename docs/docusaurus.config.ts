@@ -3,16 +3,16 @@ import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'The Node Forge', // Edit
-  tagline: 'Lightweight NPM Packages Made Easy', // Edit
+  title: 'API Rate Limiter',
+  tagline: 'A simple and efficient API rate limiter for JavaScript/TypeScript applications',
   favicon: 'img/favicon.ico',
 
   url: 'https://the-node-forge.github.io',
-  baseUrl: '/npm-template/',
+  baseUrl: '/api-rate-limiter/',
   trailingSlash: false,
 
   organizationName: 'The-Node-Forge',
-  projectName: 'npm-template', // Edit
+  projectName: 'api-rate-limiter',
   deploymentBranch: 'gh-pages',
 
   onBrokenLinks: 'throw',
@@ -29,7 +29,7 @@ const config: Config = {
       {
         docs: {
           sidebarPath: require.resolve('./sidebars.ts'),
-          editUrl: 'https://github.com/The-Node-Forge/npm-template/tree/main/docs/',
+          editUrl: 'https://github.com/The-Node-Forge/api-rate-limiter/tree/main/docs/',
         },
         blog: {
           showReadingTime: true,
@@ -37,7 +37,7 @@ const config: Config = {
             type: ['rss', 'atom'],
             xslt: true,
           },
-          editUrl: 'https://github.com/The-Node-Forge/npm-template/tree/main/docs/',
+          editUrl: 'https://github.com/The-Node-Forge/api-rate-limiter/tree/main/docs/',
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
           onUntruncatedBlogPosts: 'warn',
@@ -50,12 +50,12 @@ const config: Config = {
   ],
 
   themeConfig: {
-    image: 'img/theNodeForge.png', // Edit
+    image: 'img/theNodeForge.png',
     navbar: {
-      title: 'The Node Forge', // Your Package Name
+      title: 'API Rate Limiter',
       logo: {
-        alt: 'The Node Forge Logo', // edit
-        src: 'img/theNodeForge.png', // Your Logo
+        alt: 'The Node Forge Logo',
+        src: 'img/theNodeForge.png',
       },
       items: [
         {
@@ -71,10 +71,8 @@ const config: Config = {
           position: 'left',
           label: 'API',
         },
-        // uncomment to enable blogs
-        // { to: '/blog', label: 'Blog', position: 'left' },
         {
-          href: 'https://github.com/The-Node-Forge/npm-template',
+          href: 'https://github.com/The-Node-Forge/api-rate-limiter',
           label: 'GitHub',
           position: 'right',
         },
@@ -97,7 +95,7 @@ const config: Config = {
           items: [
             {
               label: 'GitHub',
-              href: 'https://github.com/The-Node-Forge/npm-template',
+              href: 'https://github.com/The-Node-Forge/api-rate-limiter',
             },
           ],
         },
