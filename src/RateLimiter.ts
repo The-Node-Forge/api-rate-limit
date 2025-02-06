@@ -22,14 +22,13 @@ export interface RateLimitOptions {
   maxRequests: number;
 }
 
-
 /**
  * A lightweight API rate limiter that tracks requests per user and enforces limits.
  *
  * @example
  * // Creating a new rate limiter with a 1-minute window and max 5 requests
  * const limiter = new RateLimiter({ windowMs: 60000, maxRequests: 5 });
- * 
+ *
  * if (limiter.isAllowed("user123")) {
  *   console.log("Request allowed ✅");
  * } else {
@@ -85,7 +84,7 @@ class RateLimiter {
    *   console.log("Too many requests ❌");
    * }
    */
-  
+
   isAllowed(userId: string): boolean {
     const now = Date.now();
     const timestamps = this.requests.get(userId) || [];
@@ -105,4 +104,3 @@ class RateLimiter {
 }
 
 export default RateLimiter;
-

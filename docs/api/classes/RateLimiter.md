@@ -1,12 +1,13 @@
 [**api-rate-limit**](../README.md)
 
-***
+---
 
 [api-rate-limit](../globals.md) / RateLimiter
 
 # Class: RateLimiter
 
-Defined in: [RateLimiter.ts:39](https://github.com/The-Node-Forge/api-rate-limit/blob/726eba219c7ae3e0fc64d9c308da4556afdfe5b3/src/RateLimiter.ts#L39)
+Defined in:
+[RateLimiter.ts:39](https://github.com/The-Node-Forge/api-rate-limit/blob/726eba219c7ae3e0fc64d9c308da4556afdfe5b3/src/RateLimiter.ts#L39)
 
 A lightweight API rate limiter that tracks requests per user and enforces limits.
 
@@ -16,10 +17,10 @@ A lightweight API rate limiter that tracks requests per user and enforces limits
 // Creating a new rate limiter with a 1-minute window and max 5 requests
 const limiter = new RateLimiter({ windowMs: 60000, maxRequests: 5 });
 
-if (limiter.isAllowed("user123")) {
-  console.log("Request allowed ✅");
+if (limiter.isAllowed('user123')) {
+  console.log('Request allowed ✅');
 } else {
-  console.log("Too many requests ❌");
+  console.log('Too many requests ❌');
 }
 ```
 
@@ -29,7 +30,8 @@ if (limiter.isAllowed("user123")) {
 
 > **new RateLimiter**(`options`): [`RateLimiter`](RateLimiter.md)
 
-Defined in: [RateLimiter.ts:69](https://github.com/The-Node-Forge/api-rate-limit/blob/726eba219c7ae3e0fc64d9c308da4556afdfe5b3/src/RateLimiter.ts#L69)
+Defined in:
+[RateLimiter.ts:69](https://github.com/The-Node-Forge/api-rate-limit/blob/726eba219c7ae3e0fc64d9c308da4556afdfe5b3/src/RateLimiter.ts#L69)
 
 Creates an instance of RateLimiter.
 
@@ -58,7 +60,8 @@ const limiter = new RateLimiter({ windowMs: 10000, maxRequests: 3 });
 
 > **isAllowed**(`userId`): `boolean`
 
-Defined in: [RateLimiter.ts:89](https://github.com/The-Node-Forge/api-rate-limit/blob/726eba219c7ae3e0fc64d9c308da4556afdfe5b3/src/RateLimiter.ts#L89)
+Defined in:
+[RateLimiter.ts:89](https://github.com/The-Node-Forge/api-rate-limit/blob/726eba219c7ae3e0fc64d9c308da4556afdfe5b3/src/RateLimiter.ts#L89)
 
 Checks whether a user is allowed to make a request.
 
@@ -80,9 +83,9 @@ The unique identifier for the user (e.g., IP address, API key).
 
 ```ts
 // Checking if a user is allowed to make a request
-if (limiter.isAllowed("user123")) {
-  console.log("Request allowed ✅");
+if (limiter.isAllowed('user123')) {
+  console.log('Request allowed ✅');
 } else {
-  console.log("Too many requests ❌");
+  console.log('Too many requests ❌');
 }
 ```

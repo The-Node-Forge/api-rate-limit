@@ -2,11 +2,9 @@ import { Request, Response, NextFunction } from 'express';
 
 import RateLimiter from './RateLimiter';
 
-
 const HTTP_STATUS = {
   TOO_MANY_REQUESTS: 429,
 };
-
 
 /**
  * Express middleware for rate limiting API requests.
@@ -49,15 +47,14 @@ export const rateLimitMiddleware = (limiter: RateLimiter) => {
      * Unique user identifier, typically the IP address.
      * @type {string}
      */
-    const userId: string = req.ip || "";
+    const userId: string = req.ip || '';
 
     if (!limiter.isAllowed(userId)) {
       return res
         .status(HTTP_STATUS.TOO_MANY_REQUESTS)
-        .json({ message: "Too many requests, please try again later." });
+        .json({ message: 'Too many requests, please try again later.' });
     }
 
     next();
   };
 };
-
