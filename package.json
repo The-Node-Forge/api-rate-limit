@@ -1,7 +1,7 @@
 {
-  "name": "my-npm-package",
+  "name": "api-rate-limit",
   "version": "1.0.0",
-  "description": "A fully-configured TypeScript NPM package template with built-in CI/CD, automated tests, ESLint, Prettier, and Docusaurus documentation. Get started quickly with best practices for package development",
+  "description": "A simple and efficient API rate limiter for JavaScript/TypeScript applications",
   "main": "src/index.ts",
   "scripts": {
     "test": "jest",
@@ -20,14 +20,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/The-Node-Forge/npm-template"
+    "url": "https://github.com/The-Node-Forge/api-rate-limit"
   },
   "keywords": [
     "npm",
     "template",
     "starter"
   ],
-  "author": "Your Name",
+  "author": "Lanny MacMillan",
   "license": "MIT",
   "devDependencies": {
     "@eslint/compat": "^1.2.5",
