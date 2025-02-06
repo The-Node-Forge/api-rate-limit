@@ -1,6 +1,7 @@
 # Function: rateLimitMiddleware()
 
-> **rateLimitMiddleware**(`limiter`): (`req`, `res`, `next`) => `undefined` \| `Response`
+> **rateLimitMiddleware**(`limiter`): (`req`, `res`, `next`) => `undefined` \|
+> `Response`
 
 Defined in: [middleware.ts:19](https://github.com/The-Node-Forge/api-rate-limit/blob/80ce7d7b38f74cf2444ba0f4e8ff16bc2888907d/src/middleware.ts#L19)
 
