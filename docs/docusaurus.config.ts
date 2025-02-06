@@ -9,7 +9,7 @@ const config: Config = {
   favicon: 'img/favicon.ico',
 
   url: 'https://the-node-forge.github.io',
-  baseUrl: '/api-rate-limit/', 
+  baseUrl: '/api-rate-limit/',
   trailingSlash: false,
 
   organizationName: 'The-Node-Forge',
