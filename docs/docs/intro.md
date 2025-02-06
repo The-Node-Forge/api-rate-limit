@@ -9,7 +9,6 @@ sidebar_position: 1
 Welcome to the documentation for **API Rate Limiter**. Below is a list of available
 guides:
 
-
 ### 📌 Getting Started
 
 - [Installation Guide](./INSTALLATION.md)

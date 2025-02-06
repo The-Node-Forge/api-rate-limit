@@ -5,6 +5,7 @@ sidebar_position: 3
 ---
 
 ## 📦 Usage
+
 ### Basic Example
 
 ```javascript
@@ -24,7 +25,6 @@ app.use(rateLimitMiddleware(limiter));
 ```
 
 ---
-
 
 **1️⃣ 🌐 JavaScript/TypeScript Example**
 
@@ -101,15 +101,17 @@ app.post('/submit', rateLimitMiddleware(limiterTenReq), (req, res) => {
 });
 
 app.listen(3000, () => console.log('Server running on port 3000'));
-`````
+```
 
 ---
+
 For API details, see [API_REFERENCE.md](API_REFERENCE.md).
 
 ---
 
 ## ⭐ Support
 
-If you find this package useful, please **give it a ⭐ on [GitHub](https://github.com/The-Node-Forge/api-rate-limit "GitHub Repository")
+If you find this package useful, please \*\*give it a ⭐ on
+[GitHub](https://github.com/The-Node-Forge/api-rate-limit 'GitHub Repository')
 
 ---

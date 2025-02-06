@@ -138,13 +138,16 @@ isAllowed(userId: string): boolean
 
 ### 💡 **Contributing**
 
-Contributions are welcome! Please submit [issues](https://github.com/The-Node-Forge/api-rate-limit/issues) or [pull requests](https://github.com/The-Node-Forge/api-rate-limit/pulls).
+Contributions are welcome! Please submit
+[issues](https://github.com/The-Node-Forge/api-rate-limit/issues) or
+[pull requests](https://github.com/The-Node-Forge/api-rate-limit/pulls).
 
 ---
 
 ### ⭐ Support
 
-If you find this package useful, please **give it a ⭐ on [GitHub](https://github.com/The-Node-Forge/api-rate-limit "GitHub Repository")
+If you find this package useful, please \*\*give it a ⭐ on
+[GitHub](https://github.com/The-Node-Forge/api-rate-limit 'GitHub Repository')
 
 ---
 
