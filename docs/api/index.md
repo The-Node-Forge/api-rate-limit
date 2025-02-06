@@ -136,25 +136,19 @@ isAllowed(userId: string): boolean
 
 ---
 
-## 📜 **License**
+### 💡 **Contributing**
 
-MIT License.
-
----
-
-## 💡 **Contributing**
-
-Contributions are welcome! Please submit issues or pull requests.
+Contributions are welcome! Please submit [issues](https://github.com/The-Node-Forge/api-rate-limit/issues) or [pull requests](https://github.com/The-Node-Forge/api-rate-limit/pulls).
 
 ---
 
-## 🌟 **Support**
+### ⭐ Support
 
-If you find this package useful, please consider giving it a ⭐ on GitHub!
+If you find this package useful, please **give it a ⭐ on [GitHub](https://github.com/The-Node-Forge/api-rate-limit "GitHub Repository")
 
 ---
 
-## 🔗 **Links**
+### 🔗 **Links**
 
 - 📦 [NPM Package](https://www.npmjs.com/package/@node-forge/rate-limiter) _(Replace
   with actual link)_

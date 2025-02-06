@@ -4,16 +4,11 @@ description: Guides list
 sidebar_position: 1
 ---
 
-# Documentation Index
+## Documentation Index
 
 Welcome to the documentation for **API Rate Limiter**. Below is a list of available
 guides:
 
-## Description
-
-**A fully-configured TypeScript NPM package template with built-in CI/CD, automated
-tests, ESLint, Prettier, and Docusaurus documentation. Get started quickly with best
-practices for package development**
 
 ### 📌 Getting Started
 

@@ -3,16 +3,24 @@ title: Installation
 description: Installation details.
 sidebar_position: 2
 ---
+## 📦 Installation
 
 ### Prerequisites
 
-- Node.js version X.X.X
-- npm or yarn
+- `Node.js --version 18+`
+- `npm or yarn`
 
-### Installation Steps
+
+Install the package using **npm** or **yarn**:
 
 ```sh
-npm install package-name
+npm install @node-forge/rate-limiter
 ```
+or
+```sh
+yarn add @node-forge/rate-limiter
+```
+
+---
 
 For more details, see [USAGE.md](USAGE.md).
