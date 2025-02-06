@@ -28,3 +28,21 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+.markdown h1, .markdown h2, .markdown h3 {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 0.3em;
+}
+
+.markdown pre {
+  background-color: #f5f5f5;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.markdown code {
+  color: #c7254e;
+  background-color: #f9f2f4;
+  padding: 3px 5px;
+  border-radius: 3px;
+}

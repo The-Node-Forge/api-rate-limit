@@ -1,3 +1,9 @@
+[**api-rate-limit**](../README.md)
+
+***
+
+[api-rate-limit](../globals.md) / RateLimiter
+
 # Class: RateLimiter
 
 Defined in: [RateLimiter.ts:39](https://github.com/The-Node-Forge/api-rate-limit/blob/726eba219c7ae3e0fc64d9c308da4556afdfe5b3/src/RateLimiter.ts#L39)
