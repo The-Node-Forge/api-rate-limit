@@ -4,7 +4,7 @@
   
  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
- [Live Documentation](https://the-node-forge.github.io/api-rate-limit/)
+[Live Documentation](https://the-node-forge.github.io/api-rate-limit/)
 
 </div>
  
