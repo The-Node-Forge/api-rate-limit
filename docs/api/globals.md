@@ -1,6 +1,6 @@
 [**api-rate-limit**](README.md)
 
----
+***
 
 # api-rate-limit
 

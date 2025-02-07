@@ -1,10 +1,9 @@
-**api-rate-limit**
-
-***
-
 <div align="center">
    
-  # API Rate Limiter 
+  <h2 style={{ fontSize: '2rem', color: 'var(--ifm-color-primary)', textAlign: 'center' }}>
+    API-Rate-Limit
+  </h2>
+
  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
  </div>

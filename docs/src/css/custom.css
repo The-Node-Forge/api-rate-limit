@@ -8,7 +8,7 @@
   --ifm-color-primary-lightest: #3cad6e;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
-  --markdown-code-bg: #eeeeee; /* Darker background for code blocks in light mode */
+  --markdown-code-bg: #eeeeee;
   --markdown-code-text: #c7254e;
 }
 
@@ -21,7 +21,7 @@
   --ifm-color-primary-lighter: #32d8b4;
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.1);
-  --markdown-code-bg: #1e1e1e; /* Even darker background for code blocks in dark mode */
+  --markdown-code-bg: #1e1e1e;
   --markdown-code-text: #ffcb6b;
 }
 
@@ -45,7 +45,7 @@
   padding: 12px;
   border-radius: 6px;
   overflow-x: auto;
-  color: var(--markdown-code-text); /* Ensures text is readable */
+  color: var(--markdown-code-text);
 }
 
 .markdown code {
@@ -54,10 +54,9 @@
   padding: 4px 6px;
   border-radius: 4px;
   font-family: 'Courier New', monospace;
-  font-weight: bold; /* Increases contrast for readability */
+  font-weight: bold;
 }
 
-/* Ensuring inline code is readable */
 .markdown p code {
   padding: 2px 4px;
   border-radius: 3px;

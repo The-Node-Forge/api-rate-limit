@@ -4,8 +4,6 @@ description: Installation details.
 sidebar_position: 2
 ---
 
-## 📦 Installation
-
 ### Prerequisites
 
 - `Node.js --version 18+`

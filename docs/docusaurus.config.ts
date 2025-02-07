@@ -60,6 +60,7 @@ const config: Config = {
         alt: 'The Node Forge Logo',
         src: 'img/theNodeForge.png',
       },
+      hideOnScroll: true, 
       items: [
         {
           type: 'docSidebar',
@@ -67,13 +68,12 @@ const config: Config = {
           position: 'left',
           label: 'Docs',
         },
-
-        {
-          type: 'docSidebar',
-          sidebarId: 'apiSidebar',
-          position: 'left',
-          label: 'API',
-        },
+        // {
+        //   type: 'docSidebar',
+        //   sidebarId: 'apiSidebar',
+        //   position: 'left',
+        //   label: 'API',
+        // },
         {
           href: 'https://github.com/The-Node-Forge/api-rate-limit',
           label: 'GitHub',
@@ -89,7 +89,7 @@ const config: Config = {
           items: [
             {
               label: 'API',
-              to: '/docs/api/',
+              to: '/docs/intro/',
             },
           ],
         },
