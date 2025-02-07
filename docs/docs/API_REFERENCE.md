@@ -26,16 +26,17 @@ const config = {
 
 **Returns:**
 
-**1️⃣ RateLimiter Class** | Function | Return Type | Description |
-|----------|------------|-------------| | `isAllowed(userId: string)` | `boolean` |
-Returns `true` if the request is **allowed**, otherwise `false` if the **rate limit
-is exceeded**. | | `constructor(options: RateLimitOptions)` | `RateLimiter`
-(instance) | Creates a new rate limiter instance using the provided configuration. |
+### **1️⃣ RateLimiter Class**
+
+| Function                                 | Return Type              | Description                                                                                        |
+| ---------------------------------------- | ------------------------ | -------------------------------------------------------------------------------------------------- |
+| `isAllowed(userId: string)`              | `boolean`                | Returns `true` if the request is **allowed**, otherwise `false` if the **rate limit is exceeded**. |
+| `constructor(options: RateLimitOptions)` | `RateLimiter` (instance) | Creates a new rate limiter instance using the provided configuration.                              |
 
 ---
 
-**2️⃣ Middleware Function** | Function | Return Type | Description |
-|----------|------------|-------------| | `rateLimitMiddleware(limiter: RateLimiter)`
-| `(req: Request, res: Response, next: NextFunction) => void` | Express middleware
-that **enforces rate limits**. If the limit is exceeded, it returns a
-`429 Too Many Requests` response. |
+### **2️⃣ Middleware Function**
+
+| Function                                    | Return Type                                                 | Description                                                                                                                |
+| ------------------------------------------- | ----------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| `rateLimitMiddleware(limiter: RateLimiter)` | `(req: Request, res: Response, next: NextFunction) => void` | Express middleware that **enforces rate limits**. If the limit is exceeded, it returns a `429 Too Many Requests` response. |

@@ -1,3 +1,9 @@
+[**api-rate-limit**](../README.md)
+
+---
+
+[api-rate-limit](../globals.md) / rateLimitMiddleware
+
 # Function: rateLimitMiddleware()
 
 > **rateLimitMiddleware**(`limiter`): (`req`, `res`, `next`) => `undefined` \| >

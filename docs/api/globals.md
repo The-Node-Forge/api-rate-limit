@@ -1,5 +1,13 @@
-# my-npm-package
+[**api-rate-limit**](README.md)
+
+---
+
+# api-rate-limit
+
+## Classes
+
+- [RateLimiter](classes/RateLimiter.md)
 
 ## Functions
 
-- [greet](functions/greet.md)
+- [rateLimitMiddleware](functions/rateLimitMiddleware.md)
