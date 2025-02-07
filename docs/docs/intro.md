@@ -4,8 +4,6 @@ description: Guides list
 sidebar_position: 1
 ---
 
-## Documentation Index
-
 Welcome to the documentation for **API Rate Limiter**. Below is a list of available
 guides:
 
