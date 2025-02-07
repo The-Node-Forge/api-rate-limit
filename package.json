@@ -2,7 +2,8 @@
   "name": "api-rate-limit",
   "version": "1.0.0",
   "description": "A simple and efficient API rate limiter for JavaScript/TypeScript applications",
-  "main": "src/index.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "test": "jest",
     "test:watch": "jest --watch",
@@ -24,12 +25,18 @@
     "url": "https://github.com/The-Node-Forge/api-rate-limit"
   },
   "keywords": [
-    "npm",
-    "template",
-    "starter"
+    "rate-limit",
+    "api",
+    "express",
+    "typescript",
+    "npm-package"
   ],
-  "author": "Lanny MacMillan",
+  "author": "The Node Forge",
   "license": "MIT",
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "devDependencies": {
     "@eslint/compat": "^1.2.5",
     "@eslint/eslintrc": "^3.2.0",
