@@ -2,9 +2,9 @@
 
 > **rateLimitMiddleware**(`limiter`): (`req`, `res`, `next`) => `undefined` \| `Response`
 
-Defined in: [middleware.ts:35](https://github.com/The-Node-Forge/api-rate-limit/blob/726eba219c7ae3e0fc64d9c308da4556afdfe5b3/src/middleware.ts#L35)
+Defined in: [middleware.ts:35](https://github.com/The-Node-Forge/api-rate-limit/blob/9a4f5eb06869e3581ab4dc6e5104a79aa9d01bdb/src/middleware.ts#L35)
 
-Express middleware for rate limiting API requests.
+Express middleware for rate limiting API requestss.
 
 ## Parameters
 

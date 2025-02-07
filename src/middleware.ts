@@ -9,7 +9,7 @@ const HTTP_STATUS = {
 
 
 /**
- * Express middleware for rate limiting API requests.
+ * Express middleware for rate limiting API requestss.
  *
  * @param {RateLimiter} limiter - The rate limiter instance to use.
  * @returns {(req: Request, res: Response, next: NextFunction) => void} Express middleware function.

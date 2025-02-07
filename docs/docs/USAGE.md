@@ -4,8 +4,6 @@ description: Basic example and config.
 sidebar_position: 3
 ---
 
-## 📦 Usage
-
 ### Basic Example
 
 ```javascript
