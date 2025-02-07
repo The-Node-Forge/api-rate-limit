@@ -1,5 +1,5 @@
 {
-  "name": "api-rate-limit",
+  "name": "@the-node-forge/api-rate-limit",
   "version": "1.0.0",
   "description": "A simple and efficient API rate limiter for JavaScript/TypeScript applications",
   "main": "dist/index.js",
