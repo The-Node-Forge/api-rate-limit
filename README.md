@@ -1,9 +1,12 @@
 <div align="center">
    
   # API Rate Limiter 
+  
  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
- </div>
+[Live Documentation](https://the-node-forge.github.io/api-rate-limit/)
+
+</div>
  
 A **simple and efficient API rate limiter** for JavaScript/TypeScript applications. This package helps developers **limit API requests per user**, preventing abuse and excessive usage.
 

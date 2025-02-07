@@ -6,7 +6,7 @@
 
 # Function: rateLimitMiddleware()
 
-> **rateLimitMiddleware**(`limiter`): (`req`, `res`, `next`) => `undefined` \|
+> **rateLimitMiddleware**(`limiter`): (`req`, `res`, `next`) => `undefined` \| >
 > `Response`
 
 Defined in:
