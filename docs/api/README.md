@@ -1,6 +1,6 @@
 **api-rate-limit**
 
-***
+---
 
 <div align="center">
    

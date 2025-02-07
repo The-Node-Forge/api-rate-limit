@@ -1,6 +1,6 @@
 [**api-rate-limit**](../README.md)
 
-***
+---
 
 [api-rate-limit](../globals.md) / RateLimiter
 
@@ -16,10 +16,10 @@ A lightweight API rate limiter that tracks requests per user and enforces limits
 // Creating a new rate limiter with a 1-minute window and max 5 requests
 const limiter = new RateLimiter({ windowMs: 60000, maxRequests: 5 });
 
-if (limiter.isAllowed("user123")) {
-  console.log("Request allowed ✅");
+if (limiter.isAllowed('user123')) {
+  console.log('Request allowed ✅');
 } else {
-  console.log("Too many requests ❌");
+  console.log('Too many requests ❌');
 }
 ```
 
@@ -80,9 +80,9 @@ The unique identifier for the user (e.g., IP address, API key).
 
 ```ts
 // Checking if a user is allowed to make a request
-if (limiter.isAllowed("user123")) {
-  console.log("Request allowed ✅");
+if (limiter.isAllowed('user123')) {
+  console.log('Request allowed ✅');
 } else {
-  console.log("Too many requests ❌");
+  console.log('Too many requests ❌');
 }
 ```
