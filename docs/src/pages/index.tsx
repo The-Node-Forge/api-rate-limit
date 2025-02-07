@@ -11,7 +11,6 @@ export default function Home(): ReactNode {
       description="A simple and efficient API rate limiter for JavaScript/TypeScript applications"
     >
       <main>
-        
         <HomepageFeatures />
       </main>
     </Layout>

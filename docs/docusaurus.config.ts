@@ -60,7 +60,7 @@ const config: Config = {
         alt: 'The Node Forge Logo',
         src: 'img/theNodeForge.png',
       },
-      hideOnScroll: true, 
+      hideOnScroll: true,
       items: [
         {
           type: 'docSidebar',

@@ -6,7 +6,6 @@ const HTTP_STATUS = {
   TOO_MANY_REQUESTS: 429,
 };
 
-
 export const rateLimitMiddleware = (limiter: RateLimiter) => {
   return (req: Request, res: Response, next: NextFunction) => {
     const userId: string = req.ip || '';
