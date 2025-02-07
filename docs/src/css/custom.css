@@ -25,7 +25,9 @@
   --markdown-code-text: #ffcb6b;
 }
 
-.markdown h1, .markdown h2, .markdown h3 {
+.markdown h1,
+.markdown h2,
+.markdown h3 {
   border-bottom: 1px solid var(--ifm-color-primary);
   padding-bottom: 0.3em;
   color: var(--ifm-color-primary-darkest);
@@ -51,7 +53,7 @@
   background-color: var(--markdown-code-bg);
   padding: 4px 6px;
   border-radius: 4px;
-  font-family: "Courier New", monospace;
+  font-family: 'Courier New', monospace;
   font-weight: bold; /* Increases contrast for readability */
 }
 
@@ -69,12 +71,13 @@
   border-collapse: collapse;
 }
 
-.markdown table th, .markdown table td {
+.markdown table th,
+.markdown table td {
   border: 1px solid var(--ifm-color-primary-dark);
   padding: 8px;
 }
 
-[data-theme='dark'] .markdown table th, 
+[data-theme='dark'] .markdown table th,
 [data-theme='dark'] .markdown table td {
   border-color: var(--ifm-color-primary-light);
 }
@@ -90,4 +93,3 @@
   border-left-color: var(--ifm-color-primary-light);
   background: rgba(37, 194, 160, 0.1);
 }
-

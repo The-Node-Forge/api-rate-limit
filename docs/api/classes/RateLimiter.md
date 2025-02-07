@@ -6,7 +6,8 @@
 
 # Class: RateLimiter
 
-Defined in: [RateLimiter.ts:39](https://github.com/The-Node-Forge/api-rate-limit/blob/9a4f5eb06869e3581ab4dc6e5104a79aa9d01bdb/src/RateLimiter.ts#L39)
+Defined in:
+[RateLimiter.ts:39](https://github.com/The-Node-Forge/api-rate-limit/blob/9a4f5eb06869e3581ab4dc6e5104a79aa9d01bdb/src/RateLimiter.ts#L39)
 
 A lightweight API rate limiter that tracks requests per user and enforces limits.
 
@@ -29,7 +30,8 @@ if (limiter.isAllowed('user123')) {
 
 > **new RateLimiter**(`options`): [`RateLimiter`](RateLimiter.md)
 
-Defined in: [RateLimiter.ts:69](https://github.com/The-Node-Forge/api-rate-limit/blob/9a4f5eb06869e3581ab4dc6e5104a79aa9d01bdb/src/RateLimiter.ts#L69)
+Defined in:
+[RateLimiter.ts:69](https://github.com/The-Node-Forge/api-rate-limit/blob/9a4f5eb06869e3581ab4dc6e5104a79aa9d01bdb/src/RateLimiter.ts#L69)
 
 Creates an instance of RateLimiter.
 
@@ -58,7 +60,8 @@ const limiter = new RateLimiter({ windowMs: 10000, maxRequests: 3 });
 
 > **isAllowed**(`userId`): `boolean`
 
-Defined in: [RateLimiter.ts:89](https://github.com/The-Node-Forge/api-rate-limit/blob/9a4f5eb06869e3581ab4dc6e5104a79aa9d01bdb/src/RateLimiter.ts#L89)
+Defined in:
+[RateLimiter.ts:89](https://github.com/The-Node-Forge/api-rate-limit/blob/9a4f5eb06869e3581ab4dc6e5104a79aa9d01bdb/src/RateLimiter.ts#L89)
 
 Checks whether a user is allowed to make a request.
 
