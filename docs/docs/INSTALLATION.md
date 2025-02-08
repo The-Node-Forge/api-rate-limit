@@ -12,13 +12,13 @@ sidebar_position: 2
 Install the package using **npm** or **yarn**:
 
 ```sh
-npm install @node-forge/rate-limiter
+npm install @the-node-forge/api-rate-limit
 ```
 
 or
 
 ```sh
-yarn add @node-forge/rate-limiter
+yarn add @the-node-forge/api-rate-limit
 ```
 
 ---

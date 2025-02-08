@@ -23,13 +23,13 @@ A **simple and efficient API rate limiter** for JavaScript/TypeScript applicatio
 ## 📦 Installation
 
 ```sh
-npm install @node-forge/rate-limiter
+npm install @the-node-forge/api-rate-limit
 ```
 
 or using Yarn:
 
 ```sh
-yarn add @node-forge/rate-limiter
+yarn add @the-node-forge/api-rate-limit
 ```
 
 ---
@@ -42,7 +42,7 @@ Easily integrate with **JavaScript/TypeScript**.
 
 ```javascript
 // Javascript
-import RateLimiter from '@node-forge/rate-limiter';
+import RateLimiter from '@the-node-forge/api-rate-limit';
 
 // Create a rate limiter allowing 5 requests per minute
 const limiter = new RateLimiter({ windowMs: 60000, maxRequests: 5 });
@@ -64,7 +64,7 @@ Easily integrate with an **Express API**.
 
 ```typescript
 import express from 'express';
-import { RateLimiter, rateLimitMiddleware } from '@node-forge/rate-limiter';
+import { RateLimiter, rateLimitMiddleware } from '@the-node-forge/api-rate-limit';
 
 const app = express();
 
@@ -89,7 +89,7 @@ Easily integrate with an **Express API**.
 
 ```typescript
 import express from 'express';
-import { RateLimiter, rateLimitMiddleware } from '@node-forge/rate-limiter';
+import { RateLimiter, rateLimitMiddleware } from '@the-node-forge/api-rate-limit';
 
 const app = express();
 
