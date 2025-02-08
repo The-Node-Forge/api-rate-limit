@@ -153,5 +153,5 @@ If you find this package useful, please \*\*give it a ⭐ on
 
 ### 🔗 **Links**
 
-- 📦 [NPM Package](https://github.com/The-Node-Forge)
+- 📦 [NPM Package](https://www.npmjs.com/package/@the-node-forge/api-rate-limit)
 - 🏗 [The-Node-Forge](https://github.com/The-Node-Forge)
