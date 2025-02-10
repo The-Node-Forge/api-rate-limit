@@ -1,6 +1,6 @@
 {
   "name": "@the-node-forge/api-rate-limit",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A simple and efficient API rate limiter for JavaScript/TypeScript applications",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -29,7 +29,19 @@
     "api",
     "express",
     "typescript",
-    "npm-package"
+    "npm-package",
+    "request-throttling",
+    "http",
+    "middleware",
+    "express-middleware",
+    "throttle",
+    "rate-limiter",
+    "web-security",
+    "api-protection",
+    "ddos-protection",
+    "request-limiting",
+    "nodejs",
+    "backend"
   ],
   "author": "The Node Forge",
   "license": "MIT",
