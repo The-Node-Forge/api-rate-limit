@@ -5,6 +5,8 @@
  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 [![NPM Version](https://img.shields.io/npm/v/@the-node-forge/api-rate-limit)](https://www.npmjs.com/package/@the-node-forge/api-rate-limit)
+[![NPM Downloads](https://img.shields.io/npm/dm/@the-node-forge/api-rate-limit)](https://www.npmjs.com/package/@the-node-forge/api-rate-limit)
+
 [![Build Status](https://img.shields.io/github/actions/workflow/status/the-node-forge/api-rate-limit/ci.yaml?branch=main)](https://github.com/The-Node-Forge/api-rate-limit/actions)
 
 [Live Documentation](https://the-node-forge.github.io/api-rate-limit/)
