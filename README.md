@@ -2,7 +2,13 @@
    
   # API Rate Limiter 
   
- [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+![Made with TypeScript](https://img.shields.io/badge/Made%20with-TypeScript-007acc)
+
+[![NPM Version](https://img.shields.io/npm/v/@the-node-forge/url-validator)](https://www.npmjs.com/package/@the-node-forge/api-rate-limit)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/the-node-forge/api-rate-limit/ci.yaml?branch=main)](https://github.com/The-Node-Forge/api-rate-limit/actions)
+![Platform](https://img.shields.io/badge/platform-node.js%20%7C%20browser-brightgreen)
 
 [Live Documentation](https://the-node-forge.github.io/api-rate-limit/)
 
