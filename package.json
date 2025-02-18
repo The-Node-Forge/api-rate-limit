@@ -3,7 +3,7 @@
   "version": "1.0.5",
   "description": "A simple and efficient API rate limiter for JavaScript/TypeScript applications",
   "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "types": "dist/src/index.d.ts",
   "scripts": {
     "test": "jest",
     "test:watch": "jest --watch",
@@ -43,7 +43,10 @@
     "nodejs",
     "backend"
   ],
-  "author": "The Node Forge",
+  "author": {
+    "name": "Lanny MacMillan",
+    "url": "https://github.com/Lanny-MacMillan"
+  },
   "license": "MIT",
   "files": [
     "dist",
