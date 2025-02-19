@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="plugin-pages plugin-id-default" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.7.0">
+<title data-rh="true">Hello from API Rate Limit | API Rate Limit</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://the-node-forge.github.io/api-rate-limit/img/theNodeForge.png"><meta data-rh="true" name="twitter:image" content="https://the-node-forge.github.io/api-rate-limit/img/theNodeForge.png"><meta data-rh="true" property="og:url" content="https://the-node-forge.github.io/api-rate-limit/"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docusaurus_tag" content="default"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docsearch:docusaurus_tag" content="default"><meta data-rh="true" property="og:title" content="Hello from API Rate Limit | API Rate Limit"><meta data-rh="true" name="description" content="A simple and efficient API rate limiter for JavaScript/TypeScript applications"><meta data-rh="true" property="og:description" content="A simple and efficient API rate limiter for JavaScript/TypeScript applications"><link data-rh="true" rel="icon" href="/api-rate-limit/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://the-node-forge.github.io/api-rate-limit/"><link data-rh="true" rel="alternate" href="https://the-node-forge.github.io/api-rate-limit/" hreflang="en"><link data-rh="true" rel="alternate" href="https://the-node-forge.github.io/api-rate-limit/" hreflang="x-default"><script data-rh="true">function insertBanner(){var n=document.createElement("div");n.id="__docusaurus-base-url-issue-banner-container";n.innerHTML='\n<div id="__docusaurus-base-url-issue-banner" style="border: thick solid red; background-color: rgb(255, 230, 179); margin: 20px; padding: 20px; font-size: 20px;">\n   <p style="font-weight: bold; font-size: 30px;">Your Docusaurus site did not load properly.</p>\n   <p>A very common reason is a wrong site <a href="https://docusaurus.io/docs/docusaurus.config.js/#baseUrl" style="font-weight: bold;">baseUrl configuration</a>.</p>\n   <p>Current configured baseUrl = <span style="font-weight: bold; color: red;">/api-rate-limit/</span> </p>\n   <p>We suggest trying baseUrl = <span id="__docusaurus-base-url-issue-banner-suggestion-container" style="font-weight: bold; color: green;"></span></p>\n</div>\n',document.body.prepend(n);var e=document.getElementById("__docusaurus-base-url-issue-banner-suggestion-container"),s=window.location.pathname,o="/"===s.substr(-1)?s:s+"/";e.innerHTML=o}document.addEventListener("DOMContentLoaded",(function(){void 0===window.docusaurus&&insertBanner()}))</script><link rel="alternate" type="application/rss+xml" href="/api-rate-limit/blog/rss.xml" title="API Rate Limit RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/api-rate-limit/blog/atom.xml" title="API Rate Limit Atom Feed"><link rel="stylesheet" href="/api-rate-limit/assets/css/styles.41fd28e6.css">
+<script src="/api-rate-limit/assets/js/runtime~main.bf6ae2ec.js" defer="defer"></script>
+<script src="/api-rate-limit/assets/js/main.f102979f.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const n=new URLSearchParams(window.location.search).entries();for(var[t,e]of n)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/api-rate-limit/img/theNodeForge.png"><link rel="preload" as="image" href="https://img.shields.io/badge/License-MIT-yellow.svg"><link rel="preload" as="image" href="https://img.shields.io/badge/Made%20with-TypeScript-007acc"><link rel="preload" as="image" href="https://img.shields.io/npm/v/@the-node-forge/url-validator"><link rel="preload" as="image" href="https://img.shields.io/github/actions/workflow/status/the-node-forge/api-rate-limit/ci.yaml?branch=main"><link rel="preload" as="image" href="https://img.shields.io/badge/platform-node.js%20%7C%20browser-brightgreen"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="navbar navbar--fixed-top navbarHideable_m1mJ"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/api-rate-limit/"><div class="navbar__logo"><img src="/api-rate-limit/img/theNodeForge.png" alt="The Node Forge Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/api-rate-limit/img/theNodeForge.png" alt="The Node Forge Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">API Rate Limiter</b></a><a class="navbar__item navbar__link" href="/api-rate-limit/docs/intro">Docs</a></div><div class="navbar__items navbar__items--right"><a href="https://github.com/The-Node-Forge/api-rate-limit" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="Switch between dark and light mode (currently light mode)" aria-label="Switch between dark and light mode (currently light mode)" aria-live="polite" aria-pressed="false"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><main><main class="container margin-vert--lg"><div style="text-align:center;margin-bottom:2rem"><img src="/api-rate-limit/img/theNodeForge.png" alt="The Node Forge Logo" width="150" height="150" style="border-radius:50%"><h1 style="margin-top:1rem;font-size:2rem">The Node Forge presents:</h1></div><div align="center"><header><h1 id="api-rate-limiter">API Rate Limiter</h1></header><p><a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT"></a></p><p><img src="https://img.shields.io/badge/Made%20with-TypeScript-007acc" alt="Made with TypeScript"></p><p><a href="https://www.npmjs.com/package/@the-node-forge/api-rate-limit"><img src="https://img.shields.io/npm/v/@the-node-forge/url-validator" alt="NPM Version"></a>
+<a href="https://github.com/The-Node-Forge/api-rate-limit/actions"><img src="https://img.shields.io/github/actions/workflow/status/the-node-forge/api-rate-limit/ci.yaml?branch=main" alt="Build Status"></a>
+<img src="https://img.shields.io/badge/platform-node.js%20%7C%20browser-brightgreen" alt="Platform"></p><p><a href="https://the-node-forge.github.io/api-rate-limit/">Live Documentation</a></p></div>
+<p>A <strong>simple and efficient API rate limiter</strong> for JavaScript/TypeScript applications. This package helps developers <strong>limit API requests per user</strong>, preventing abuse and excessive usage.</p>
+<h2 id="-features">✨ Features</h2>
+<ul>
+<li>✅ <strong>Configurable Limits</strong> – Set max requests per second, minute, or hour.</li>
+<li>✅ <strong>In-Memory Storage</strong> – Fast and lightweight.</li>
+<li>✅ <strong>Express Middleware</strong> – Easily integrate with Express.</li>
+<li>✅ <strong>Multiple Users</strong> – Tracks each user separately.</li>
+</ul>
+<hr>
+<h2 id="-installation">📦 Installation</h2>
+<pre><code class="language-sh">npm install @the-node-forge/api-rate-limit
+</code></pre>
+<p>or using Yarn:</p>
+<pre><code class="language-sh">yarn add @the-node-forge/api-rate-limit
+</code></pre>
+<hr>
+<h2 id="️-basic-usage">🛠️ Basic Usage</h2>
+<h3 id="1️⃣--javascripttypescript-example"><strong>1️⃣ 🌐 JavaScript/TypeScript Example</strong></h3>
+<p>Easily integrate with <strong>JavaScript/TypeScript</strong>.</p>
+<pre><code class="language-javascript">// Javascript
+import RateLimiter from &#x27;@the-node-forge/api-rate-limit&#x27;;
+
+// Create a rate limiter allowing 5 requests per minute
+const limiter = new RateLimiter({ windowMs: 60000, maxRequests: 5 });
+
+const userId = &#x27;user123&#x27;; // Could be an API key or IP
+
+if (limiter.isAllowed(userId)) {
+  console.log(&#x27;Request allowed ✅&#x27;);
+} else {
+  console.log(&#x27;Too many requests ❌&#x27;);
+}
+</code></pre>
+<hr>
+<h3 id="2️⃣--express-middleware-example---global">2️⃣ 🌐 Express Middleware Example - Global</h3>
+<p>Easily integrate with an <strong>Express API</strong>.</p>
+<pre><code class="language-typescript">import express from &#x27;express&#x27;;
+// ESM
+import { RateLimiter, rateLimitMiddleware } from &#x27;@the-node-forge/api-rate-limit&#x27;;
+// or CommonJs
+const {
+  RateLimiter,
+  rateLimitMiddleware,
+} = require(&#x27;@the-node-forge/api-rate-limit&#x27;);
+
+const app = express();
+
+// Set up rate limiter (10 requests per minute)
+const limiter = new RateLimiter({ windowMs: 60000, maxRequests: 10 });
+
+// Apply middleware globally
+app.use(rateLimitMiddleware(limiter));
+
+app.get(&#x27;/&#x27;, (req, res) =&gt; {
+  res.send(&#x27;Welcome to my API!&#x27;);
+});
+
+app.listen(3000, () =&gt; console.log(&#x27;Server running on port 3000&#x27;));
+</code></pre>
+<hr>
+<h3 id="3️⃣--express-middleware-example---specific">3️⃣ 🌐 Express Middleware Example - Specific</h3>
+<p>Easily integrate with an <strong>Express API</strong>.</p>
+<pre><code class="language-typescript">import express from &#x27;express&#x27;;
+// ESM
+import { RateLimiter, rateLimitMiddleware } from &#x27;@the-node-forge/api-rate-limit&#x27;;
+// or CommonJs
+const {
+  RateLimiter,
+  rateLimitMiddleware,
+} = require(&#x27;@the-node-forge/api-rate-limit&#x27;);
+
+const app = express();
+
+const limiterFiveReq = new RateLimiter({ windowMs: 60000, maxRequests: 5 });
+const limiterTenReq = new RateLimiter({ windowMs: 60000, maxRequests: 10 });
+
+// Apply rate limiting to only specific routes
+app.get(&#x27;/public&#x27;, (req, res) =&gt; {
+  res.send(&#x27;This route has no rate limiting!&#x27;);
+});
+
+// Apply rate limiting only to this route
+app.get(&#x27;/limited&#x27;, rateLimitMiddleware(limiterFiveReq), (req, res) =&gt; {
+  res.send(&#x27;This route is rate-limited to 5 requests!&#x27;);
+});
+
+app.post(&#x27;/submit&#x27;, rateLimitMiddleware(limiterTenReq), (req, res) =&gt; {
+  res.send(&#x27;This POST request is also rate-limited to ten requests!&#x27;);
+});
+
+app.listen(3000, () =&gt; console.log(&#x27;Server running on port 3000&#x27;));
+</code></pre>
+<hr>
+<h2 id="-api-reference">✅ <strong>API Reference</strong></h2>
+<h3 id="ratelimiter-class"><strong>RateLimiter Class</strong></h3>
+<pre><code class="language-typescript">new RateLimiter({ windowMs: number, maxRequests: number });
+</code></pre>
+<table><thead><tr><th>Parameter</th><th>Type</th><th>Description</th></tr></thead><tbody><tr><td><code>windowMs</code></td><td><code>number</code></td><td>Time window in milliseconds (e.g., <code>60000</code> for 1 minute)</td></tr><tr><td><code>maxRequests</code></td><td><code>number</code></td><td>Maximum allowed requests in the given window</td></tr></tbody></table>
+<h4 id="methods"><strong>Methods</strong></h4>
+<pre><code class="language-typescript">isAllowed(userId: string): boolean
+</code></pre>
+<table><thead><tr><th>Method</th><th>Returns</th><th>Description</th></tr></thead><tbody><tr><td><code>isAllowed(userId)</code></td><td><code>boolean</code></td><td>Returns <code>true</code> if the user is allowed to make a request, otherwise <code>false</code>.</td></tr></tbody></table>
+<hr>
+<h3 id="-contributing">💡 <strong>Contributing</strong></h3>
+<p>Contributions are welcome! Please submit
+<a href="https://github.com/The-Node-Forge/api-rate-limit/issues">issues</a> or
+<a href="https://github.com/The-Node-Forge/api-rate-limit/pulls">pull requests</a>.</p>
+<hr>
+<h3 id="-support">⭐ Support</h3>
+<p>If you find this package useful, please **give it a ⭐ on
+<a href="https://github.com/The-Node-Forge/api-rate-limit" title="GitHub Repository">GitHub</a></p>
+<hr>
+<h3 id="-links">🔗 <strong>Links</strong></h3>
+<ul>
+<li>📦 <a href="https://www.npmjs.com/package/@the-node-forge/api-rate-limit">NPM Package</a></li>
+<li>🏗 <a href="https://github.com/The-Node-Forge">The-Node-Forge</a></li>
+</ul></main></main></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/api-rate-limit/docs/intro">API</a></li></ul></div><div class="col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/The-Node-Forge/api-rate-limit" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 The Node Forge. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>
