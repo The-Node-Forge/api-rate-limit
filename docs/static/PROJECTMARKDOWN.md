@@ -1,12 +1,18 @@
 <div align="center">
    
-  <h2 style={{ fontSize: '2rem', color: 'var(--ifm-color-primary)', textAlign: 'center' }}>
-    API-Rate-Limit
-  </h2>
-
+  # API Rate Limiter 
+  
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
- </div>
+![Made with TypeScript](https://img.shields.io/badge/Made%20with-TypeScript-007acc)
+
+[![NPM Version](https://img.shields.io/npm/v/@the-node-forge/url-validator)](https://www.npmjs.com/package/@the-node-forge/api-rate-limit)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/the-node-forge/api-rate-limit/ci.yaml?branch=main)](https://github.com/The-Node-Forge/api-rate-limit/actions)
+![Platform](https://img.shields.io/badge/platform-node.js%20%7C%20browser-brightgreen)
+
+[Live Documentation](https://the-node-forge.github.io/api-rate-limit/)
+
+</div>
  
 A **simple and efficient API rate limiter** for JavaScript/TypeScript applications. This package helps developers **limit API requests per user**, preventing abuse and excessive usage.
 
@@ -63,7 +69,13 @@ Easily integrate with an **Express API**.
 
 ```typescript
 import express from 'express';
+// ESM
 import { RateLimiter, rateLimitMiddleware } from '@the-node-forge/api-rate-limit';
+// or CommonJs
+const {
+  RateLimiter,
+  rateLimitMiddleware,
+} = require('@the-node-forge/api-rate-limit');
 
 const app = express();
 
@@ -88,7 +100,13 @@ Easily integrate with an **Express API**.
 
 ```typescript
 import express from 'express';
+// ESM
 import { RateLimiter, rateLimitMiddleware } from '@the-node-forge/api-rate-limit';
+// or CommonJs
+const {
+  RateLimiter,
+  rateLimitMiddleware,
+} = require('@the-node-forge/api-rate-limit');
 
 const app = express();
 

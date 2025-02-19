@@ -69,7 +69,13 @@ Easily integrate with an **Express API**.
 
 ```typescript
 import express from 'express';
+// ESM
 import { RateLimiter, rateLimitMiddleware } from '@the-node-forge/api-rate-limit';
+// or CommonJs
+const {
+  RateLimiter,
+  rateLimitMiddleware,
+} = require('@the-node-forge/api-rate-limit');
 
 const app = express();
 
@@ -94,7 +100,13 @@ Easily integrate with an **Express API**.
 
 ```typescript
 import express from 'express';
+// ESM
 import { RateLimiter, rateLimitMiddleware } from '@the-node-forge/api-rate-limit';
+// or CommonJs
+const {
+  RateLimiter,
+  rateLimitMiddleware,
+} = require('@the-node-forge/api-rate-limit');
 
 const app = express();
 

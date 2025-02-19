@@ -7,7 +7,14 @@ sidebar_position: 3
 ### Basic Example
 
 ```javascript
+// ESM
 import { RateLimiter, rateLimitMiddleware } from '@the-node-forge/api-rate-limit';
+
+// CommonJs
+const {
+  RateLimiter,
+  rateLimitMiddleware,
+} = require('@the-node-forge/api-rate-limit');
 ```
 
 ### Configuration
