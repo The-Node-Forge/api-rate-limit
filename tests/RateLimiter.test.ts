@@ -1,4 +1,4 @@
-import RateLimiter from '../RateLimiter';
+import RateLimiter from '../src/RateLimiter';
 
 describe('RateLimiter', () => {
   let rateLimiter: RateLimiter;

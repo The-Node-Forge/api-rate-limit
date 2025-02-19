@@ -3,7 +3,11 @@
   "version": "1.0.6",
   "description": "A simple and efficient API rate limiter for JavaScript/TypeScript applications",
   "main": "dist/index.js",
-  "types": "dist/src/index.d.ts",
+  "types": "dist/index.d.ts",
+  "exports": {
+    "import": "./dist/index.js",
+    "require": "./dist/index.js"
+  },
   "scripts": {
     "test": "jest",
     "test:watch": "jest --watch",
