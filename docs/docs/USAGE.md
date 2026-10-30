@@ -37,7 +37,7 @@ Easily integrate with **JavaScript/TypeScript**.
 
 ```javascript
 // Javascript
-import RateLimiter from '@the-node-forge/api-rate-limit';
+import { RateLimiter } from '@the-node-forge/api-rate-limit';
 
 // Create a rate limiter allowing 5 requests per minute
 const limiter = new RateLimiter({ windowMs: 60000, maxRequests: 5 });
@@ -111,6 +111,23 @@ app.listen(3000, () => console.log('Server running on port 3000'));
 ---
 
 For API details, see [API_REFERENCE.md](API_REFERENCE.md).
+
+---
+
+## 🔒 Security Notes
+
+- **Behind a proxy or load balancer**, `req.ip` is the proxy's address unless Express
+  is told to trust it, so all users would share one limit. Set
+  [`app.set('trust proxy', ...)`](https://expressjs.com/en/guide/behind-proxies.html)
+  to the exact number of proxies in front of your app. Do not use `true` when clients
+  can reach the app directly, since they can spoof `X-Forwarded-For` and dodge the
+  limit.
+- **State is in memory and per process.** Limits are not shared across multiple
+  instances or restarts; use a shared store at the edge if you scale horizontally.
+- **Invalid options throw.** `windowMs` must be a positive finite number and
+  `maxRequests` a positive integer; otherwise the constructor throws a `RangeError`.
+- **IPv6**: each address is limited separately, so one client with a whole `/64` can
+  use many addresses. Key on an API key or user id where you can.
 
 ---
 
