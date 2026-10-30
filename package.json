@@ -30,7 +30,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/The-Node-Forge/api-rate-limit"
+    "url": "git+https://github.com/The-Node-Forge/api-rate-limit.git"
   },
   "keywords": [
     "rate-limit",
