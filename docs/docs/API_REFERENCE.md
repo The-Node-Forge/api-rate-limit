@@ -10,10 +10,12 @@ API rate limiter that tracks requests per user and enforces limits.
 
 **Parameters:**
 
-| Option        | Type     | Default | Description                                                         |
-| ------------- | -------- | ------- | ------------------------------------------------------------------- |
-| `windowMs`    | `number` | `60000` | Time window in milliseconds (e.g., `60000` for 1 minute).           |
-| `maxRequests` | `number` | `5`     | Maximum number of allowed requests per user within the time window. |
+| Option        | Type     | Required | Description                                                                           |
+| ------------- | -------- | -------- | ------------------------------------------------------------------------------------- |
+| `windowMs`    | `number` | yes      | Time window in milliseconds (e.g., `60000` for 1 minute). Positive, finite.           |
+| `maxRequests` | `number` | yes      | Maximum number of allowed requests per user within the time window. Positive integer. |
+
+There are no defaults. Invalid values throw a `RangeError`.
 
 **Example configuration:**
 
